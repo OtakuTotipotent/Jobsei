@@ -34,7 +34,12 @@
     </p>
 
     <h2 class="text-center mt-3 mb-4">Open Positions</h2>
-    <p>TODO - Show the jobs here</p>
+
+    <ul class="d-flex flex-column gap-4">
+      {% for job in jobs %}
+      {% include 'jobs.html' %}
+      {% endfor %}
+    </ul>
 
     <button class="btn btn-primary btn-lg">Contact us</button>
   </div>
